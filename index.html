@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushant Indi | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+        <h1>Sushant Indi</h1>
+        <h2>Entry-Level Full-Stack Developer</h2>
+        <p class="tech-stack">
+            Java • Spring Boot • React • Node.js • REST APIs
+        </p>
+
+        <div class="hero-buttons">
+            <a href="https://github.com/SushantIndi" target="_blank">GitHub</a>
+            <a href="assets/resume/Sushant_Indi_Resume.pdf" target="_blank">Resume</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section">
+        <h3>About Me</h3>
+        <p>
+            Entry-level full-stack developer with hands-on experience building web applications
+            using Java and JavaScript stacks. Experienced in REST API development, role-based
+            systems, and structured application design through academic and real-world projects.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section">
+        <h3>Skills</h3>
+
+        <ul class="skills">
+            <li><strong>Languages:</strong> Java, JavaScript</li>
+            <li><strong>Backend:</strong> Spring Boot, Node.js, Express.js</li>
+            <li><strong>Frontend:</strong> React.js, HTML5, CSS3</li>
+            <li><strong>Database:</strong> SQL, MongoDB</li>
+            <li><strong>Tools:</strong> Git, GitHub</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section">
+        <h3>Projects</h3>
+
+        <div class="project-card">
+            <h4>Book My Ticket</h4>
+            <p>Online Movie Ticket Booking System</p>
+            <p class="project-tech">Spring Boot • REST APIs • SQL / MongoDB</p>
+            <a href="projects/book-my-ticket.html">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h4>Real-Time Attendance System</h4>
+            <p>Role-based attendance automation system</p>
+            <p class="project-tech">Node.js • Express • MongoDB</p>
+            <a href="projects/attendance-system.html">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h4>Anime Merchandise Store</h4>
+            <p>Frontend e-commerce web application</p>
+            <p class="project-tech">React • Vite • CSS</p>
+            <a href="projects/anime-store.html">View Project</a>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP SECTION -->
+    <section class="section">
+        <h3>Internship</h3>
+        <p>
+            <strong>VLSI Design Engineer Intern – Rooman Technologies</strong><br>
+            Hands-on experience with Verilog HDL, digital design concepts, and EDA tools,
+            strengthening problem-solving and core engineering fundamentals.
+        </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <h3>Contact</h3>
+        <p>Email: sushantmindi@gmail.com</p>
+        <p>Phone: +91 9164014862</p>
+        <p>
+            <a href="https://github.com/SushantIndi" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/sushant-indi/" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Sushant Indi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 70, density: { enable: true, value_area: 800 } },
+                color: { value: ["#00baff", "#4dd2ff"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 140,
+                    color: "#00baff",
+                    opacity: 0.15,
+                    width: 1
+                },
+                move: { enable: true, speed: 1.1 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "grab" }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

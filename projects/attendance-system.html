@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time Attendance System | Project</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+        <h1>Real-Time Attendance System</h1>
+        <h2>Role-Based Attendance Automation</h2>
+        <p class="tech-stack">
+            Node.js • Express.js • MongoDB • REST APIs
+        </p>
+    </header>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section">
+        <h3>Project Overview</h3>
+        <p>
+            The Real-Time Attendance System is a web-based application designed to automate
+            attendance tracking using role-based access for teachers and students.
+            The system replaces manual attendance processes with structured REST APIs
+            to improve accuracy, efficiency, and data consistency.
+        </p>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="section">
+        <h3>Application Screens</h3>
+
+        <div class="image-grid">
+            <img src="../assets/images/project-attendance-login.png" alt="Login Page">
+            <img src="../assets/images/project-attendance-teacher.png" alt="Teacher Dashboard">
+            <img src="../assets/images/project-attendance-student.png" alt="Student Attendance Page">
+        </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="section">
+        <h3>System Architecture</h3>
+
+        <img class="architecture-img" src="../assets/images/attendance-architecture.png"
+            alt="Attendance System Architecture Diagram">
+
+        <ul class="architecture-points">
+            <li>Client layer provides role-based interfaces for teachers and students</li>
+            <li>REST APIs built with Express.js handle authentication and attendance requests</li>
+            <li>Business logic validates sessions and prevents duplicate attendance entries</li>
+            <li>Database stores users, sessions, and attendance records securely</li>
+            <li>Structured data flow ensures real-time accuracy and reliability</li>
+        </ul>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Role-based access for teachers and students</li>
+            <li>Real-time attendance marking</li>
+            <li>Session-based attendance control</li>
+            <li>Duplicate entry prevention</li>
+            <li>Automated record management</li>
+        </ul>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section">
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>Backend: Node.js, Express.js</li>
+            <li>APIs: RESTful Web Services</li>
+            <li>Database: MongoDB / SQLite</li>
+            <li>Architecture: Layered Architecture</li>
+        </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section">
+        <h3>Project Links</h3>
+        <p>
+            <a href="https://github.com/your-github/attendance-system" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <p>
+            <a href="../index.html">← Back to Home</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Sushant Indi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 70, density: { enable: true, value_area: 800 } },
+                color: { value: ["#00baff", "#4dd2ff"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 140,
+                    color: "#00baff",
+                    opacity: 0.15,
+                    width: 1
+                },
+                move: { enable: true, speed: 1.1 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "grab" }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

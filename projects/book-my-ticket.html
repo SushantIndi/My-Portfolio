@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book My Ticket | Project</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- HEADER -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+    <header class="hero">
+        <h1>Book My Ticket</h1>
+        <h2>Online Movie Ticket Booking System</h2>
+        <p class="tech-stack">
+            Spring Boot • REST APIs • SQL / MongoDB
+        </p>
+    </header>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section">
+        <h3>Project Overview</h3>
+        <p>
+            Book My Ticket is a full-stack online movie ticket booking system designed
+            with separate Admin and User modules. The system manages movies, theaters,
+            shows, seat layouts, and bookings using REST-based workflows to ensure
+            data integrity and smooth user experience.
+        </p>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="section">
+        <h3>Application Screens</h3>
+
+        <div class="image-grid">
+            <img src="../assets/images/project-bookmyticket.png" alt="Home Page">
+            <img src="../assets/images/project-bookmyticket-seats.png" alt="Seat Selection">
+            <img src="../assets/images/project-bookmyticket-admin.png" alt="Admin Dashboard">
+        </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="section">
+        <h3>System Architecture</h3>
+
+        <img class="architecture-img" src="../assets/images/bookmyticket-architecture.png"
+            alt="Book My Ticket Architecture Diagram">
+
+        <ul class="architecture-points">
+            <li>Frontend handles user and admin interactions such as movie browsing and seat selection</li>
+            <li>Spring Boot REST controllers process requests and return structured responses</li>
+            <li>Service layer manages booking logic and prevents double seat allocation</li>
+            <li>Repository layer abstracts database access and persistence</li>
+            <li>Database stores movies, shows, seats, and booking records</li>
+        </ul>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Role-based access for Admin and Users</li>
+            <li>Dynamic seat selection and booking confirmation</li>
+            <li>Movie, theater, and show management</li>
+            <li>REST-based communication between frontend and backend</li>
+        </ul>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section">
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>Backend: Java, Spring Boot</li>
+            <li>APIs: RESTful Web Services</li>
+            <li>Database: SQL / MongoDB</li>
+            <li>Architecture: Layered Architecture (MVC)</li>
+        </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section">
+        <h3>Project Links</h3>
+        <p>
+            <a href="https://github.com/your-github/book-my-ticket" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <p>
+            <a href="../index.html">← Back to Home</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Sushant Indi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 70, density: { enable: true, value_area: 800 } },
+                color: { value: ["#00baff", "#4dd2ff"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 140,
+                    color: "#00baff",
+                    opacity: 0.15,
+                    width: 1
+                },
+                move: { enable: true, speed: 1.1 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "grab" }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

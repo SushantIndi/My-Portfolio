@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Merchandise Store | Project</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+        <h1>Anime Merchandise Store</h1>
+        <h2>Frontend E-commerce Web Application</h2>
+        <p class="tech-stack">
+            React.js • Vite • JavaScript • CSS
+        </p>
+    </header>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section">
+        <h3>Project Overview</h3>
+        <p>
+            The Anime Merchandise Store is a responsive frontend e-commerce application
+            built using React and modern JavaScript. The project focuses on clean UI design,
+            reusable components, and performance optimization, while remaining backend-agnostic
+            through structured mock data.
+        </p>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="section">
+        <h3>Application Screens</h3>
+
+        <div class="image-grid">
+            <img src="../assets/images/project-anime-dashboard.png" alt="Home Page">
+            <img src="../assets/images/project-anime-products.png" alt="Product Listing">
+            <img src="../assets/images/project-anime-login.png" alt="Product Details">
+        </div>
+    </section>
+
+    <!-- FRONTEND ARCHITECTURE -->
+    <section class="section">
+        <h3>Frontend Architecture</h3>
+
+        <img class="architecture-img" src="../assets/images/anime-store-architecture.png"
+            alt="Anime Store Frontend Architecture">
+
+        <ul class="architecture-points">
+            <li>Component-based architecture using reusable React functional components</li>
+            <li>State and UI logic managed using React hooks</li>
+            <li>Product data loaded from structured JSON for backend-independent development</li>
+            <li>Vite used for faster builds and optimized development workflow</li>
+            <li>Responsive layout implemented using modern CSS practices</li>
+        </ul>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Product listing and category-based filtering</li>
+            <li>Reusable UI components for scalability</li>
+            <li>Responsive design for desktop and mobile</li>
+            <li>Optimized build performance with Vite</li>
+        </ul>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section">
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>Frontend: React.js, JavaScript (ES6)</li>
+            <li>Styling: CSS3 (Flexbox, Grid)</li>
+            <li>Build Tool: Vite</li>
+            <li>Deployment: Netlify</li>
+        </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section">
+        <h3>Project Links</h3>
+        <p>
+            <a href="https://github.com/your-github/anime-store" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <p>
+            <a href="https://your-netlify-link.netlify.app" target="_blank">
+                Live Demo
+            </a>
+        </p>
+        <p>
+            <a href="../index.html">← Back to Home</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Sushant Indi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 70, density: { enable: true, value_area: 800 } },
+                color: { value: ["#00baff", "#4dd2ff"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 140,
+                    color: "#00baff",
+                    opacity: 0.15,
+                    width: 1
+                },
+                move: { enable: true, speed: 1.1 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "grab" }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
