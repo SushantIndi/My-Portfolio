@@ -4,55 +4,64 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sushant Indi | Portfolio</title>
+    <title>Sushant Indi | Software Engineer Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="portfolio">
     <div id="particles-js"></div>
 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo">Sushant Indi</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="nav-resume" href="assets/resume/Sushant_Indi_Resume.pdf" target="_blank">Resume</a>
+    </nav>
+
     <!-- HERO SECTION -->
-    <header class="hero">
+    <header class="hero" id="home">
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
 
         <h1>Sushant Indi</h1>
-        <h2>Entry-Level Full-Stack Developer</h2>
+        <h2>Software Engineer | Full-Stack & DevOps</h2>
+
         <p class="tech-stack">
-            Java • Spring Boot • React • Node.js • REST APIs
+            Java • Spring Boot • REST APIs • Docker • Kubernetes • AWS
+        </p>
+
+        <p class="hero-summary">
+            I build backend-driven applications and deploy them using modern DevOps practices,
+            focusing on clean architecture, scalability, and reliability.
         </p>
 
         <div class="hero-buttons">
+            <a href="#projects">View Projects</a>
             <a href="https://github.com/SushantIndi" target="_blank">GitHub</a>
-            <a href="assets/resume/Sushant_Indi_Resume.pdf" target="_blank">Resume</a>
         </div>
     </header>
 
     <!-- ABOUT SECTION -->
-    <section class="section">
-        <h3>About Me</h3>
+    <section class="section about">
+        <h3>About</h3>
         <p>
-            Entry-level full-stack developer with hands-on experience building web applications
-            using Java and JavaScript stacks. Experienced in REST API development, role-based
-            systems, and structured application design through academic and real-world projects.
+            I am an aspiring software engineer with hands-on experience in building and deploying
+            real-world applications using Java, Spring Boot, JavaScript, and cloud-native tools.
+        </p>
+        <p>
+            My interests lie in backend engineering, system design, and DevOps workflows.
+            I enjoy transforming ideas into reliable, production-ready solutions.
         </p>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section class="section">
-        <h3>Skills</h3>
-
-        <ul class="skills">
-            <li><strong>Languages:</strong> Java, JavaScript</li>
-            <li><strong>Backend:</strong> Spring Boot, Node.js, Express.js</li>
-            <li><strong>Frontend:</strong> React.js, HTML5, CSS3</li>
-            <li><strong>Database:</strong> SQL, MongoDB</li>
-            <li><strong>Tools:</strong> Git, GitHub</li>
-        </ul>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section class="section">
+    <!-- PROJECTS SECTION (UNCHANGED CONTENT) -->
+    <section class="section projects" id="projects">
         <h3>Projects</h3>
 
         <div class="project-card">
@@ -77,21 +86,52 @@
         </div>
     </section>
 
-    <!-- INTERNSHIP SECTION -->
-    <section class="section">
-        <h3>Internship</h3>
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+        <h3>Skills</h3>
+
+        <ul class="skills">
+            <li><strong>Backend:</strong> Java, Spring Boot, Node.js, Express.js, REST APIs</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, React.js</li>
+            <li><strong>Databases:</strong> MySQL, MongoDB</li>
+            <li><strong>DevOps:</strong> Docker, Docker Hub, Jenkins, Kubernetes</li>
+            <li><strong>Cloud:</strong> AWS (EC2, S3, IAM, VPC, ELB, CloudWatch)</li>
+            <li><strong>Tools & Practices:</strong> Git, GitHub, Maven, Agile, SDLC</li>
+        </ul>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience" id="experience">
+        <h3>Experience</h3>
         <p>
-            <strong>VLSI Design Engineer Intern – Rooman Technologies</strong><br>
-            Hands-on experience with Verilog HDL, digital design concepts, and EDA tools,
-            strengthening problem-solving and core engineering fundamentals.
+            <strong>VLSI Design Engineer Intern – Rooman Technologies Ltd.</strong><br>
+            <em>Sep 2024 – May 2025</em>
+        </p>
+        <p>
+            Worked on digital design using Verilog HDL with exposure to RTL design,
+            simulation, and EDA tools. Strengthened debugging, analytical thinking,
+            and engineering fundamentals.
+        </p>
+    </section>
+
+    <!-- EDUCATION (MINIMAL) -->
+    <section class="section education">
+        <h3>Education</h3>
+        <p>
+            Bachelor of Engineering – Electronics & Communication Engineering<br>
+            Government Engineering College, Karwar (2021 – 2025)
         </p>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="section">
+    <section class="section contact" id="contact">
         <h3>Contact</h3>
-        <p>Email: sushantmindi@gmail.com</p>
-        <p>Phone: +91 9164014862</p>
+        <p>
+            Open to entry-level roles, internships, and collaborative opportunities.
+        </p>
+        <p>
+            <a href="mailto:sushantmindi@gmail.com">sushantmindi@gmail.com</a>
+        </p>
         <p>
             <a href="https://github.com/SushantIndi" target="_blank">GitHub</a> |
             <a href="https://www.linkedin.com/in/sushant-indi/" target="_blank">LinkedIn</a>
@@ -128,7 +168,6 @@
             retina_detect: true
         });
     </script>
-
     <script src="js/main.js"></script>
 </body>
 
