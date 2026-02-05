@@ -1,6 +1,3 @@
-/* ===============================
-   BASE RESET (SAFE FOR ALL PAGES)
-   =============================== */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===============================
-   THEME VARIABLES
-   =============================== */
 :root {
     --bg-color: #0b0f14;
     --text-color: #eaf4ff;
@@ -25,7 +19,6 @@
     --radius: 14px;
 }
 
-/* DARK MODE */
 body.dark {
     --bg-color: #0b0f14;
     --text-color: #eaf4ff;
@@ -38,7 +31,6 @@ body.dark {
     --accent-solid: #00baff;
 }
 
-/* LIGHT MODE */
 body:not(.dark) {
     --bg-color: #f7fbff;
     --text-color: #071421;
@@ -51,9 +43,6 @@ body:not(.dark) {
     --accent-solid: #0062d1;
 }
 
-/* ===============================
-   BODY
-   =============================== */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -62,7 +51,6 @@ body {
     transition: background 300ms ease, color 300ms ease;
 }
 
-/* PARTICLES */
 #particles-js {
     position: fixed;
     inset: 0;
@@ -70,9 +58,6 @@ body {
     pointer-events: none;
 }
 
-/* ===============================
-   HERO (BASE – PROJECT SAFE)
-   =============================== */
 .hero {
     padding: 90px 20px;
     text-align: center;
@@ -100,9 +85,6 @@ body {
     color: var(--muted-color);
 }
 
-/* ===============================
-   SECTIONS (BASE – PROJECT SAFE)
-   =============================== */
 .section {
     max-width: 900px;
     margin: 70px auto;
@@ -120,9 +102,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* ===============================
-   PROJECT CONTENT (SAFE)
-   =============================== */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -148,18 +127,12 @@ body {
     margin-bottom: 8px;
 }
 
-/* ===============================
-   FOOTER (SAFE)
-   =============================== */
 .footer {
     text-align: center;
     padding: 30px;
     font-size: 0.9rem;
 }
 
-/* ===============================
-   THEME TOGGLE (SAFE)
-   =============================== */
 .theme-toggle {
     position: absolute;
     top: 20px;
@@ -171,9 +144,6 @@ body {
     cursor: pointer;
 }
 
-/* ======================================================
-   PORTFOLIO-ONLY ENHANCEMENTS (INDEX PAGE ONLY)
-   ====================================================== */
 .portfolio .navbar {
     position: sticky;
     top: 0;
@@ -216,12 +186,10 @@ body {
     text-decoration: none;
 }
 
-/* Portfolio hero spacing */
 .portfolio .hero {
     padding: 120px 20px 100px;
 }
 
-/* Hero buttons (index only) */
 .portfolio .hero-buttons {
     margin-top: 30px;
 }
@@ -236,7 +204,6 @@ body {
     font-weight: 600;
 }
 
-/* Project cards (index only) */
 .portfolio .project-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
