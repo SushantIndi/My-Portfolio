@@ -166,7 +166,7 @@ body {
     color: var(--accent-solid);
 }
 
-.nav-actions {
+.portfolio .nav-actions {
     display: flex;
     align-items: center;
     gap: 12px;
