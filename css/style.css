@@ -133,24 +133,13 @@ body {
     font-size: 0.9rem;
 }
 
-.theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: transparent;
-    border: 1px solid #cbd5f5;
-    padding: 6px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
 .portfolio .navbar {
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 14px 30px;
     backdrop-filter: blur(10px);
     background: rgba(10, 15, 25, 0.6);
@@ -175,6 +164,33 @@ body {
 
 .portfolio .nav-links a:hover {
     color: var(--accent-solid);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portfolio .theme-toggle {
+    position: static;
+    background: transparent;
+    border: 1px solid #cbd5f5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.project-page .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 1px solid #cbd5f5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .portfolio .nav-resume {
