@@ -6,15 +6,17 @@
 }
 
 :root {
-    --bg-color: #0b0f14;
-    --text-color: #eaf4ff;
-    --muted-color: #9aa5b1;
 
-    --card-bg: rgba(255, 255, 255, 0.04);
-    --card-border: rgba(255, 255, 255, 0.08);
+    --bg-color: #0a0a0a;
+    --text-color: #e5e5e5;
+    --muted-color: #9a9a9a;
 
-    --accent-bg: linear-gradient(135deg, #00baff, #2ad1ff);
-    --accent-solid: #00baff;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 0, 0, 0.15);
+
+    --accent-bg: linear-gradient(135deg, #ff1e1e, #8b0000);
+
+    --accent-solid: #ff1e1e;
 
     --radius: 14px;
 }
@@ -77,6 +79,44 @@ body {
     margin-top: 10px;
     margin-bottom: 12px;
     font-weight: 400;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid var(--accent-solid);
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 0, 0.4),
+        0 0 40px rgba(255, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.about-image {
+    width: 160px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 2px solid var(--accent-solid);
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+.hero-text {
+    max-width: 500px;
 }
 
 .tech-stack {
@@ -342,4 +382,18 @@ body {
         font-size: 0.8rem;
         gap: 8px;
     }
+}
+
+@media (max-width: 768px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
 }
