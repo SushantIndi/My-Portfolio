@@ -104,11 +104,29 @@ body {
     transition: transform 0.3s ease;
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image-container {
+    flex: 0 0 auto;
+}
+
 .about-image {
-    width: 160px;
+    width: 180px;
     border-radius: 12px;
-    margin-bottom: 20px;
     border: 2px solid var(--accent-solid);
+
+    box-shadow:
+        0 0 15px rgba(255,0,0,0.3),
+        0 0 30px rgba(255,0,0,0.15);
 }
 
 .hero-image img:hover {
@@ -394,6 +412,19 @@ body {
     .hero-image img {
         width: 180px;
         height: 180px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 150px;
     }
 
 }
