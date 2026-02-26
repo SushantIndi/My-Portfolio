@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real-Time Attendance System | Project</title>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="system-architecture">
         <h3>System Architecture</h3>
 
         <img class="architecture-img" src="../assets/images/attendance-architecture.png"
@@ -76,41 +76,109 @@
             <li>Database: MongoDB / SQLite</li>
             <li>Architecture: Layered Architecture</li>
         </ul>
+        <div class="hero-buttons">
+            <a href="https://github.com/your-github/attendance-system" target="_blank">
+                View Code
+            </a>
+            <a href="#system-architecture">
+                View Architecture
+            </a>
+        </div>
     </section>
 
     <section class="section">
         <h3>Project Links</h3>
-        <p>
-            <a href="https://github.com/your-github/attendance-system" target="_blank">
-                View on GitHub
+
+        <div class="project-links">
+            <a class="project-button" href="https://github.com/your-github/attendance-system" target="_blank">
+                <i class="fab fa-github"></i> View Source Code
             </a>
-        </p>
-        <p>
-            <a href="../index.html">← Back to Home</a>
-        </p>
+
+            <a class="project-button" href="../index.html">
+                ← Back to Portfolio
+            </a>
+        </div>
+    </section>
+    <section class="section project-cta">
+        <div class="card">
+            <h3>Interested in this project?</h3>
+            <p>
+                If you'd like a walkthrough or technical discussion,
+                feel free to connect with me.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="mailto:sushantmindi@gmail.com">Contact Me</a>
+                <a href="https://github.com/SushantIndi" target="_blank">GitHub Profile</a>
+            </div>
+        </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2026 Sushant Indi</p>
+    <footer class="project-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <h3>Real-Time Attendance System</h3>
+                <p>
+                    Role-based attendance automation system built using
+                    Node.js, Express, and MongoDB.
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/SushantIndi" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sushant-indi" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sushantmindi@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Sushant Indi. Built with precision.</p>
+
+            <button id="backToTop" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
+        const isDark = document.body.classList.contains("dark");
+
         particlesJS("particles-js", {
             particles: {
                 number: { value: 70, density: { enable: true, value_area: 800 } },
-                color: { value: ["#00baff", "#4dd2ff"] },
+                color: { value: isDark ? ["#ff1e1e", "#8b0000"] : ["#0062d1", "#2a8bff"] },
                 shape: { type: "circle" },
-                opacity: { value: 0.5, random: true },
+                opacity: { value: 0.25, random: true },
                 size: { value: 3, random: true },
                 line_linked: {
                     enable: true,
                     distance: 140,
-                    color: "#00baff",
-                    opacity: 0.15,
+                    color: isDark ? "#ff1e1e" : "#0062d1",
+                    opacity: 0.12,
                     width: 1
                 },
-                move: { enable: true, speed: 1.1 }
+                move: { enable: true, speed: 1 }
             },
             interactivity: {
                 events: {
